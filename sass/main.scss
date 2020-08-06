@@ -1,0 +1,103 @@
+/*
+colores
+
+light green  #7ed56f
+Medium green #55c576
+Dark green : #28b485
+*/
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/composition.scss";
+@import "components/features-box";
+@import "components/card";
+@import "components/story";
+@import "components/bg-video";
+@import "components/book";
+@import "components/form";
+@import "components/popup";
+
+
+
+@import "layouts/header";
+@import "layouts/grid";
+@import "layouts/navigation";
+
+
+@import "pages/home";
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+html {
+    font-size: 62.5%; 
+    font-family: "Lato", sans-serif;
+
+}
+
+body{
+
+    box-sizing: content-box;
+    color:$color-grey-dark;
+  
+}
+
+
+
+
+
+
+
+.heading-primary{
+    color: $color-white;
+    font-weight: 400;
+    backface-visibility: hidden;
+    text-align: center;
+    margin-bottom: 5rem;
+
+    &--main{
+        font-size: 6rem;
+        display: block;
+        letter-spacing: 3.5rem;
+        animation-name: animationInLeft;
+        animation-duration: 2s;
+        font-weight: 400;
+     
+    }
+
+    &--sub{
+        display: block;
+        font-weight: bold;
+        font-size: 2rem;
+        letter-spacing: 1.75rem;
+        animation-name: animationInRight;
+        animation-duration: 2s;
+       
+    }
+    
+
+    
+}
+
+
+
+
+
